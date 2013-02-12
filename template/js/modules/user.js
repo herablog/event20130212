@@ -37,9 +37,36 @@ socket.on('userData', function(data) {
 socket.on('win', function(data) {
 	var user = $.storage('user');
 	if (user.id === data.id) {
-		$('#index img').attr({
+		var audio = new Audio();
+		audio.src = '/sound/get.m4a';
+		audio.loop = true;
+
+		var img = $('#index img');
+		img.attr({
 			src: '/img/kozuchi.png'
 		});
+		
+		$('#index').prepend($.tag('button.button').text('ON').tap(function() {
+			if ($(this).text() === 'ON') {
+				$(this).text('OFF');
+				play();
+			} else {
+				$(this).text('ON');
+				stop();	
+			}
+		}));
+		
+		function play() {
+			audio.play();
+		}
+		
+		function stop() {
+			if(!audio.ended) {
+				audio.pause();
+				audio.currentTime = 0;
+			}
+		}
+		
 	}
 });
 
