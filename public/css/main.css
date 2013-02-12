@@ -29,8 +29,8 @@ body.connected{background:#f7f7f4}
 #vote li .num{color:#4dac26;display:inline-block;font-family:Gill Sans;font-size:8rem;left:40%;position:absolute;text-align:center;top:15%}
 #vote li input{cursor:pointer;display:block;height:120px;width:95%}
 #menu button{margin:20px;padding:20px}
-.button{-webkit-appearance:none;appearance:none;border:solid 1px rgba(0,0,0,0.2);-webkit-border-radius:4px;border-radius:4px;box-shadow:0 1px 1px #fff,inset 0 1px 1px rgba(255,255,255,0.4);color:#666;cursor:pointer;font-size:1.4rem;font-weight:bold;background:-webkit-linear-gradient(top,#f7f7f7 0,#e1e1e1 100%);background:linear-gradient(top,#f7f7f7 0,#e1e1e1 100%);padding:3px 10px 3px;min-height:28px;text-align:center;}
-.button.tap{background:-webkit-linear-gradient(top,#c1c1c1 0,#d7d7d7 100%);background:linear-gradient(top,#c1c1c1 0,#d7d7d7 100%)}
+.button{-webkit-appearance:none;appearance:none;border:solid 1px rgba(0,0,0,0.2);-webkit-border-radius:4px;border-radius:4px;box-shadow:0 1px 1px #fff,inset 0 1px 1px rgba(255,255,255,0.4);color:#666;cursor:pointer;font-size:1.4rem;font-weight:bold;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#f7f7f7),color-stop(100%,#e1e1e1));background:-webkit-linear-gradient(top,#f7f7f7 0,#e1e1e1 100%);background:linear-gradient(top,#f7f7f7 0,#e1e1e1 100%);padding:3px 10px 3px;min-height:28px;text-align:center;}
+.button.tap{background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#c1c1c1),color-stop(100%,#d7d7d7));background:-webkit-linear-gradient(top,#c1c1c1 0,#d7d7d7 100%);background:linear-gradient(top,#c1c1c1 0,#d7d7d7 100%)}
 .input_text{-webkit-appearance:none;appearance:none;background:#fff;-webkit-border-radius:4px;border-radius:4px;border:1px solid #ccc;box-shadow:inset 0 1px 1px #e1e1e1;font-size:1.4rem;line-height:1.2;min-height:28px;padding:1px 3px;}
 .input_text[disabled]{background:#f7f7f4;border:none;box-shadow:none;font-weight:bold}
 #chart{overflow:hidden;width:70px;-webkit-transition:width 1s ease-in-out;}

@@ -7,5 +7,6 @@ vendor(prop, args)
 
 // gradient
 gradient2(color1, position1, color2, position2)
-	background  -webkit-linear-gradient(top, color1 position1, color2 position2)
-	background  linear-gradient(top, color1 position1, color2 position2)
+	background -webkit-gradient(linear,left top,left bottom,color-stop(position1,color1),color-stop(position2,color2))
+	background -webkit-linear-gradient(top, color1 position1, color2 position2)
+	background linear-gradient(top, color1 position1, color2 position2)
