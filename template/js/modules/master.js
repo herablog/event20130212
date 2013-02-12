@@ -25,6 +25,11 @@ $('#menu button').tap(function() {
 	var el = $(this);
 	if (el.data('name') === 'select') {
 		socket.emit('select');
+		$.http.get('/api/user/selected').on({
+			complete: function(data) {
+				console.log(data);
+			}
+		});
 	} else if (el.data('name') === 'currect') {
 		socket.emit('currectUser');
 	} else {
