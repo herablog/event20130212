@@ -27,7 +27,7 @@ $('#menu button').tap(function() {
 		socket.emit('select');
 		$.http.get('/api/user/selected').on({
 			complete: function(data) {
-				console.log(data);
+				$('#contents').prepend($.tag('p').text([data.name, data.id].join(',')));
 			}
 		});
 	} else if (el.data('name') === 'currect') {
