@@ -1,0 +1,11 @@
+// add vender prefix
+vendor(prop, args)
+	-webkit-{prop} args
+	//-moz-{prop} args
+	//-o-{prop} args
+	{prop} args
+
+// gradient
+gradient2(color1, position1, color2, position2)
+	background  -webkit-linear-gradient(top, color1 position1, color2 position2)
+	background  linear-gradient(top, color1 position1, color2 position2)

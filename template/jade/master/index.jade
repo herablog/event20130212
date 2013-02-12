@@ -1,0 +1,23 @@
+//- extends base template
+extends ../includes/base
+
+//- overwride contents
+block contents
+  div#contents
+    ul#menu
+      li
+        button(data-name='select', class='button') select
+      li
+        button(data-name='index', class='button') index
+      li
+        button(data-name='q', data-option='0', class='button') Q1
+      li
+        button(data-name='q', data-option='1', class='button') Q2
+      li
+        button(data-name='q', data-option='2', class='button') Q3
+      li
+        button(data-name='currect', class='button') currect
+
+//- append scripts
+block append scripts
+  script(src='/js/modules/master.min.js')

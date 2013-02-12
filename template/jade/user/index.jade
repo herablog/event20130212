@@ -1,0 +1,33 @@
+//- extends base template
+extends ../includes/base
+
+//- overwride header
+block header
+  div#user
+    input(placeholder='Input your nickname', class='nick-name input_text')
+    button(class='button') Send
+
+//- overwride contents
+block contents
+  div(id='contents')
+    div(id='index')
+      img(src='/img/kozuchi_off.png')
+
+    div(id='vote')
+      ul
+        li
+          input(type='radio', name='vote', value='0', class='button')
+          span.num 1
+        li
+          input(type='radio', name='vote', value='1', class='button')
+          span.num 2
+        li
+          input(type='radio', name='vote', value='2', class='button')
+          span.num 3
+        li
+          input(type='radio', name='vote', value='3', class='button')
+          span.num 4
+
+//- append scripts
+block append scripts
+  script(src='/js/modules/user.min.js')

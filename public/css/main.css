@@ -1,0 +1,42 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote::before,blockquote::after,q::before,q::after{content:'';content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;cursor:pointer}
+ins{background:none;text-decoration:none}
+i,b{font-weight:normal;font-style:normal}
+mark{background:none;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+input[type="search"]::-webkit-search-decoration{display:none}
+button{-webkit-tap-highlight-color:transparent;-webkit-user-select:none}
+a,input,button,select,li,textarea,article,div{-webkit-tap-highlight-color:rgba(0,0,0,0)}
+html{font-size:62.5%;min-height:100%}
+body{background:rgba(0,0,0,0.8);color:#333;font-family:sans-serif;font-size:1.3rem;min-height:100%;}
+body.connected{background:#f7f7f4}
+#user{text-align:center;padding:20px 10px;}
+#user .input_text{margin:0 5px 0 0;width:70%}
+#contents{margin:10px}
+#index{text-align:center;margin:10px 0 0;}
+#index img{width:80%}
+#vote ul{overflow:hidden}
+#vote li{float:left;position:relative;text-align:center;width:50%;}
+#vote li .num{color:#4dac26;display:inline-block;font-family:Gill Sans;font-size:8rem;left:40%;position:absolute;text-align:center;top:15%}
+#vote li input{cursor:pointer;display:block;height:120px;width:95%}
+#menu button{margin:20px;padding:20px}
+.button{-webkit-appearance:none;appearance:none;border:solid 1px rgba(0,0,0,0.2);-webkit-border-radius:4px;border-radius:4px;box-shadow:0 1px 1px #fff,inset 0 1px 1px rgba(255,255,255,0.4);color:#666;cursor:pointer;font-size:1.4rem;font-weight:bold;background:-webkit-linear-gradient(top,#f7f7f7 0,#e1e1e1 100%);background:linear-gradient(top,#f7f7f7 0,#e1e1e1 100%);padding:3px 10px 3px;min-height:28px;text-align:center;}
+.button.tap{background:-webkit-linear-gradient(top,#c1c1c1 0,#d7d7d7 100%);background:linear-gradient(top,#c1c1c1 0,#d7d7d7 100%)}
+.input_text{-webkit-appearance:none;appearance:none;background:#fff;-webkit-border-radius:4px;border-radius:4px;border:1px solid #ccc;box-shadow:inset 0 1px 1px #e1e1e1;font-size:1.4rem;line-height:1.2;min-height:28px;padding:1px 3px;}
+.input_text[disabled]{background:#f7f7f4;border:none;box-shadow:none;font-weight:bold}
+#chart{overflow:hidden;width:70px;-webkit-transition:width 1s ease-in-out;}
+#chart:hover{width:100%}
+#chart ul{font-size:6rem;margin:0 60px;width:80%}
+#chart li{background:#4dac26;box-shadow:1px 1px 20px rgba(0,0,0,0.2);height:90px;margin:50px 0;position:relative;width:0;}
+#chart li span{display:inline-block;line-height:90px;margin:0 20px;position:absolute;}
+#chart li span.value{left:180px;font-size:3.2rem}
+#chart li span.percentage{left:5px}

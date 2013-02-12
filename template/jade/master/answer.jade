@@ -1,0 +1,25 @@
+//- extends base template
+extends ../includes/base
+
+//- overwride contents
+block contents
+  div(id='contents', data-id='#{id}')
+    div#chart
+      ul
+        li(data-num="0")
+          span.percentage 0%
+          span.value 0
+        li(data-num="1")
+          span.percentage 0%
+          span.value 0
+        li(data-num="2")
+          span.percentage 0%
+          span.value 0
+        li(data-num="3")
+          span.percentage 0%
+          span.value 0
+
+//- append scripts
+block append scripts
+  script(src='/js/lib/chikuwa-http.min.js')
+  script(src='/js/modules/master_answer.min.js')

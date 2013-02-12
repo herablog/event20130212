@@ -1,0 +1,10 @@
+{
+	"name": "event20130212",
+	"version": "0.0.1",
+	"dependencies": {
+		"express": "*",
+		"jade": "*",
+		"socket.io": "0.9.11",
+		"optimist": "*"
+	}
+}
