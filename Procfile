@@ -1,1 +1,1 @@
-web: node www/lib/server.js --port=$PORT
+web: node ./lib/server.js --port=$PORT
